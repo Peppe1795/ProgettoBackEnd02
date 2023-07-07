@@ -32,6 +32,7 @@ public class App {
 		Riviste rivista4 = new Riviste("5151516516516", "Il Politico", 2023, 30, Periodicita.MENISLE);
 		Riviste rivista5 = new Riviste("6511155616516", "Cosmos", 2007, 65, Periodicita.MENISLE);
 		System.out.println("------------- Archivio -----------");
+
 		addElement(archivio, libro1);
 		addElement(archivio, libro2);
 		addElement(archivio, libro3);
@@ -113,8 +114,13 @@ public class App {
 	}
 
 	public static void removeElement(Set<ElementiCoumniCatalogo> archivio, String isbn) {
-		Predicate<ElementiCoumniCatalogo> isThisIsbn = p -> p.isbn.equals(isbn);
-		archivio.removeIf(isThisIsbn);
+		if (!isbn.isEmpty()) {
+			Predicate<ElementiCoumniCatalogo> isThisIsbn = p -> p.isbn.equals(isbn);
+			archivio.removeIf(isThisIsbn);
+		} else {
+			System.out.println("Attenzione inserisci il codice isbn dell'elemento da eliminare");
+		}
+
 	}
 
 	public static ElementiCoumniCatalogo searchForIsbn(Set<ElementiCoumniCatalogo> archivio, String isbn) {
@@ -142,6 +148,7 @@ public class App {
 			}
 			FileUtils.writeLines(file, "UTF-8", lines, false);
 		} catch (IOException e) {
+			System.out.println("Errore salvataggio dati!!");
 			e.printStackTrace();
 		}
 	}
