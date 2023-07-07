@@ -1,0 +1,8 @@
+Titolo: Storia di una ladra di libri, anno di pubblicazione: 2021, Autore: Markus Zusak , Genere: Autobiografico
+Titolo: La fattoria degli animali, anno di pubblicazione: 1965, Autore: George Orwell, Genere: Favola
+Titolo: L'invito, anno di pubblicazione: 2022, Autore: Ruth Ware  , Genere: Horror
+Titolo: The Harvester, anno di pubblicazione: 2000, Autore: Ahra Manyu  , Genere: Thriller
+Titolo: Focus, anno di pubblicazione: 2023, numero delle pagine: 45, periodicità: TIRMESTRALE
+Titolo: The Lancet, anno di pubblicazione: 2023, numero delle pagine: 60, periodicità: SETTIMANALE
+Titolo: Settimana Enigmistica, anno di pubblicazione: 2021, numero delle pagine: 15, periodicità: SETTIMANALE
+Titolo: Cosmos, anno di pubblicazione: 2007, numero delle pagine: 65, periodicità: MENISLE
